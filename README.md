@@ -17,5 +17,23 @@ To build an executable using PyInstaller, you can use the following command:
 1. Install PyInstaller:
    ```bash
    pip install pyinstaller
-```bash
-pyinstaller -w --icon=image.ico --add-data "image.ico;." IME_cursor_kor_eng.py
+2. Navigate to the directory containing your script (IME_cursor_kor_eng.py) and icon file (image.ico).
+3. Run the following command to create a standalone executable:
+   ```bash
+   pyinstaller -w --icon=image.ico --add-data "image.ico;." IME_cursor_kor_eng.py
+   - The -w flag is used for a windowed application (no console window).
+   - "--icon=image.ico" specifies the icon file for the executable.
+   - "--add-data "image.ico;." includes the icon file in the executable.
+4. After the process completes, the dist directory will contain the standalone executable.
+### Notes
+- Ensure to replace "image.ico" with the actual path to your icon file.
+## Dependencies
+- python3.x
+- pystray
+- pillow
+## Additional Information
+- This program was tested on a Windows environment.
+- The system tray functionality is implemented using PyStray.
+- Feel free to customize and enhance the program according to your needs.
+## License
+This program is released under the MIT License.
