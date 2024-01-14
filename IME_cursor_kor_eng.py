@@ -1,3 +1,5 @@
+# Copyright (c) 2024 KimHyunJu
+
 import atexit
 import ctypes
 import tkinter as tk
